@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="cards">
+        <div class="card" style="width: 18rem;" [ngStyle]="bg(card)" *ngFor="let card of data">
+            <div class="card-body">
+                <h5 class="card-title">{{ card.title }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ card.Details }}</h6>
+                <p class="card-text" [ngStyle]="{'color': arrow(card)['color']}">
+                    {{ card.arrow }}
+                    <span [ngStyle]="{'color': arrow(card)['color']}" *ngIf="card.arrow !== '2%'"> m³</span> <!-- عرض m³ إذا كانت القيمة ليست 2% -->
+                    <i class="arrow-icon" [ngStyle]="arrow(card)">
+                        {{ arrow(card)['transform'] === 'rotate(180deg)' ? '↓' : '↑' }}
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="toggle-buttons ">
+            <button class="btn-graph" routerLink="/graph"><img
+                    src="https://cdn-icons-png.flaticon.com/128/5314/5314711.png" alt="">GRAPH</button>
+            <button class="btn-list active" routerLink="/list"><img
+                    src="https://cdn-icons-png.freepik.com/256/10901/10901456.png?uid=R142383418&ga=GA1.1.1106774465.1708693485&semt=ais_hybrid"
+                    alt="">LIST</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="container" >
+    <!-- Header with buttons -->
+    
+
+    <div class="card"*ngFor="let list of data">
+        <div class="station-info">
+            <div class="left">
+                <div class="icon">
+                    <p></p>
+                </div>
+                <div class="Img"></div>
+                <h3>{{ stationName }}</h3>
+            </div>
+            <div class="right">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAYFBMVEX///8AAADw8PD39/f7+/v09PQzMzPm5uZlZWXNzc21tbUXFxfr6+s2Njaenp5zc3OPj49qampBQUFaWlrX19eDg4MuLi4gICA7OzulpaVJSUnExMQKCgpRUVElJSW7u7vMEOTbAAAD/0lEQVR4nO3a65qiMAwGYKogBwERUFF0vP+7XBDUWUzbpMscHvd7/zeWNqal1PMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABsgjQN/LliLcI0mCOQH6RhKmvRFlHTZKtV1pRRHv/bE9XHTdlkfbCy3CUL90B+nEdl36tV01RFy2sUV2piW7t2ICwOk1jlcekUqd5Oe1XFtjbB8TxtdJM4TI8fn8hYu4U0mJ+Qgc5H00Qvkj3ZqnNohTnv1y8z/FCIsi1op9P7sNfnbRxpf76zqSUDGuamWPuYPTR+vTFF2mqSLVmbWnXpfuWnu2Fabs5FyAu0vJbmSIeEaBUYh/Jmn3PHs82swXhVJci1if+Qv4zxorA2Umpd8OYm0Sb5JxXjaZaFJVtupr1a7hiN+uxgPcsHK9jFnmmcEe6fxndp1c2p/Vlae2YMKlvW2jOf6lVCry4U61JV06sLZWeOFLMDrT9VgbhhN1PK8iwLXsIOzJsSQaDmMcapsZJPVeaHuUpiKdPSZanuf9vdV096s6CzNg5nyPvz3231kVpOIXsaEy28iFqpk2k42f/ZkbY++/y/3k011EZZYij1Qa25o5RfSQaRLhKzvj9d+1YL4cR0uaFfOqUTo/aaqVm+bPltLv2/hl8A7xr9v0aW5z1NeW4lBXbQD4uklI60K2ctj3WhV07xFHf7AKfBVBvdWwR7I/GUkdO8EK0Wg0P3l5W3UifdNoCzwZwit3ual1SzVFzLemtNPVs6xFIbKpLt3Yp0dckMpY70w8hrSSeijo6OLpEKT1wCb83o4uzUhQtRnJdOQ7z1Vi7NdnQFcOpCSfwBRbvVh8ylmHV5Tp8qOnVhdX0NJNv63q0l++ynLf2S6JSye+JhQqdI6r0e5q3STL4HUr+3ABhPMXU0pVn2ljeaszTPuWg67DPnXTR/6XZG+pLXa398o0mfKzpuNN/qFcClA7/35UzeAaqYOueZ5rU5tnzJIPRV0eFAQ3/WJK5CugMN3+1A462OmrxQdA7aDcH3HAIKE2Y8BJz3eJb7PWMw+/GscCekTYzBTx+cv9Unjff62PRDnwGjr/kMyN1zz/qBtmJ8oOVlzOQDrRd8/6dzxrUGt0/n33+pYcO6ouF2qcGzZ4fouonlBfZcMK/AuV036Xtg3HfvmLddBqFxlya5CBQaa73uIlA3qforWh/8nx87YZicXHZFK9amTGa8WhjQx+8fTpfnanp7pTnaMUWi/wHmy3M3X3ut8eQyLB51rTGyLt+DOB8vnJZllDs/ySBMNmV/TzRrmlPRul3QHNR5VJbCC6d3c93e7flpKr6YSRNfBQYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgP/TH0OlP1UtuklTAAAAAElFTkSuQmCC"
+                    alt="ef"></div>
+        </div>
+        <hr>
+        <div class="content">
+
+        <div class="data-row">
+            <p>Total Sales</p>
+            <span>{{ totalSales }} m³</span>
+        </div>
+
+        <div class="data-row">
+            <p>Total Value</p>
+            <span>{{ totalValue }} EGP</span>
+        </div>
+
+        <div class="data-row">
+            <p>Compression State</p>
+            <span>{{ compressionState }}</span>
+        </div>
+
+        <div class="data-row">
+            <p>Total Transaction Count</p>
+            <span>{{ totalTransactionCount }}</span>
+        </div>
+
+        <div class="data-row">
+            <p>Max Transaction / hour</p>
+            <span>{{ maxTransactionPerHour }}</span>
+        </div>
+
+        <div class="data-row">
+            <p>Max Transaction Date-Time</p>
+            <span>{{ maxTransactionDateTime }}</span>
+        </div>
+
+        <div class="more-options">...</div>
+    </div>
+    </div>
+</div>

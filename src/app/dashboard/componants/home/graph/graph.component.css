@@ -1,0 +1,42 @@
+*{
+    color: var(--text-color);
+}
+.stations-overview {
+ min-width: 100%;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: end;
+}
+
+.tabs span {
+    font-weight: bold;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.tabs span.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.chart-container {
+    position: relative;
+    height: 400px;
+}

@@ -1,0 +1,13 @@
+<div class="stations-overview">
+    <h2>Stations Activates Overview</h2>
+    <div class="tabs">
+        <span [class.active]="selectedTab === 'Sales'" (click)="selectTab('Sales')">Sales</span>
+        <span [class.active]="selectedTab === 'Transaction'" (click)="selectTab('Transaction')">Transaction</span>
+        <span [class.active]="selectedTab === 'Value'" (click)="selectTab('Value')">Value</span>
+        <span [class.active]="selectedTab === 'Compression'" (click)="selectTab('Compression')">Compression</span>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="salesChart"></canvas>
+    </div>
+</div>

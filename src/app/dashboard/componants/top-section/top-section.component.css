@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+   min-width: 100%;
+    height: 115px;
+    background: var(--secondary-color);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+        color: var(--text-color);
+        
+        
+}
+
+.dot {
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.dot p {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+.con{
+    display: flex;
+    gap: 3450px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 350;
+}
+.monitored ,.reload {
+    width: 90px;
+    height: 25.2px;
+    display: flex;
+    gap: 6px;
+}
+.monitored{
+    margin-left: 6px;
+}
+
+.text-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.num {
+font: normal 32px/6px Roboto;}
+.text{
+font:normal 13px/15px Roboto;}
+.reload{
+    width: 150px
+}
+#reload{
+    width: 50;
+   height: 36px; 
+}
+.rectangle{
+    width: 400px;
+        height: 44px;
+        background: var(--thirty-color) ;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        font: normal  14px/18px Montserrat;
+            letter-spacing: 1.4px;
+}
+.today{
+    width: 133px;
+        height: 42px;
+        border-radius: 30px;
+        background: var(--primary-color);
+        text-align: center;
+        
+        color: var(--secondary-color);
+}
+.lastweek{
+    margin-right:20px ;
+}
+.today ,.yesterday,.lastweek{
+display: flex;
+    justify-content: center;
+   
+   align-items: center;
+}
+ .date {
+    display: flex;
+    width:450px;
+    gap: 10px;
+ }
+input{
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    height: 5px
+}
+input:focus{
+    outline: none;
+    height: 15px;
+}
+
+form,.start,.end{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+form{
+    flex-direction: column;
+   
+}
+label{
+    width: 100%;
+    display: flex;
+    gap: 2px;
+}
+.start ,.end{
+
+    gap: 10px;
+}
+.end{
+    margin-left: 30px;
+}
+.triangle{
+    background: url(../../../../../img/play.png) no-repeat;
+}
+.square{
+    background: url(../../../../../img/square.png) no-repeat;
+}
+.triangle ,.square ,form img{
+    width: 16px;
+    height: 16px;
+}
+
+span{
+        font: normal  bold 13px/15px Roboto;
+        letter-spacing: 0px;
+        color: var(--text-color);
+}
+label p{
+font: normal  13px/15px Roboto;
+}
+.calander{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
