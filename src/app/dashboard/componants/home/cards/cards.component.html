@@ -1,12 +1,12 @@
 <div class="container">
     <div class="cards">
-        <div class="card" style="width: 18rem;" [ngStyle]="bg(card)" *ngFor="let card of data">
+        <div class="card"  [ngStyle]="bg(card)" *ngFor="let card of data">
             <div class="card-body">
                 <h5 class="card-title">{{ card.title }}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">{{ card.Details }}</h6>
                 <p class="card-text" [ngStyle]="{'color': arrow(card)['color']}">
                     {{ card.arrow }}
-                    <span [ngStyle]="{'color': arrow(card)['color']}" *ngIf="card.arrow !== '2%'"> m³</span> <!-- عرض m³ إذا كانت القيمة ليست 2% -->
+                    <span [ngStyle]="{'color': arrow(card)['color']}" *ngIf="card.arrow !== '2%'"> m³</span> 
                     <i class="arrow-icon" [ngStyle]="arrow(card)">
                         {{ arrow(card)['transform'] === 'rotate(180deg)' ? '↓' : '↑' }}
                     </i>
